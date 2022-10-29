@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -37,6 +38,7 @@
         android:layout_width="330dp"
         android:layout_height="55dp"
         android:background="#FFFFFF"
+        android:drawableLeft="@android:drawable/sym_action_email"
         android:drawablePadding="12dp"
         android:ems="10"
         android:hint="Correo"
@@ -55,11 +57,12 @@
         android:layout_width="329dp"
         android:layout_height="53dp"
         android:background="#FFFFFF"
+        android:drawableLeft="@android:drawable/ic_lock_idle_lock"
         android:drawablePadding="12dp"
         android:ems="10"
-        android:paddingStart="10dp"
         android:hint="Contraseña"
         android:inputType="textPassword"
+        android:paddingStart="10dp"
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -132,11 +135,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="122dp"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="70dp"
-        tools:layout_editor_absoluteY="666dp"/>
 
     <TextView
         android:id="@+id/textView5"
@@ -153,7 +151,7 @@
         app:layout_constraintVertical_bias="0.438" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/registro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Registrate"
