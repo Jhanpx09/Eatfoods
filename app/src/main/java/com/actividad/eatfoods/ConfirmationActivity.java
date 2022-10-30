@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 public class ConfirmationActivity extends AppCompatActivity {
 
-    private TextView name_view, email_view, password_view, phone_view;
+    public TextView name_view, email_view, password_view, phone_view;
     Button again;
 
     @Override
@@ -38,9 +38,11 @@ public class ConfirmationActivity extends AppCompatActivity {
 
     }
 
-    public void Volver(View view){
+    public void Board(View view){
         Intent again = new Intent(ConfirmationActivity.this, MainActivity.class);
+        again.putExtra("name_data", name_view.getText().toString());
         startActivity(again);
     }
+
 
 }
