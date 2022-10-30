@@ -13,6 +13,7 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     TextView register;
+    EditText login_email, login_password;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

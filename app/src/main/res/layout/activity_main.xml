@@ -34,7 +34,7 @@
         app:srcCompat="@drawable/fondo_login" />
 
     <EditText
-        android:id="@+id/txtMail"
+        android:id="@+id/login_email"
         android:layout_width="330dp"
         android:layout_height="55dp"
         android:background="#FFFFFF"
@@ -53,7 +53,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/login_password"
         android:layout_width="329dp"
         android:layout_height="53dp"
         android:background="#FFFFFF"
@@ -91,7 +91,7 @@
         android:layout_height="18dp"
         android:layout_marginBottom="4dp"
         android:text="Ingresa tu correo"
-        app:layout_constraintBottom_toTopOf="@+id/txtMail"
+        app:layout_constraintBottom_toTopOf="@+id/login_email"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.174"
         app:layout_constraintStart_toStartOf="parent" />
@@ -102,7 +102,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="4dp"
         android:text="Ingresa tu contraseña"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword"
+        app:layout_constraintBottom_toTopOf="@+id/login_password"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.145"
         app:layout_constraintStart_toStartOf="parent" />
@@ -133,7 +133,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/imageView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/login_password" />
 
 
     <TextView
