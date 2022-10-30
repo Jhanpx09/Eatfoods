@@ -48,7 +48,7 @@
 
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/nombre"
         android:layout_width="354dp"
         android:layout_height="54dp"
         android:background="#FFFFFF"
@@ -84,7 +84,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2"
+        app:layout_constraintTop_toBottomOf="@+id/nombre"
         app:layout_constraintVertical_bias="0.077" />
 
     <EditText
@@ -132,6 +132,7 @@
         android:layout_width="204dp"
         android:layout_height="57dp"
         android:backgroundTint="#ffffff"
+        android:onClick="Enviar"
         android:text="registrarse"
         android:textColor="#ED1C24"
         android:textSize="19sp"
