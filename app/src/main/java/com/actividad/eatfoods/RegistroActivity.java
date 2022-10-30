@@ -12,7 +12,7 @@ public class RegistroActivity extends AppCompatActivity {
 
 
     TextView reinicio;
-    private EditText name;
+    private EditText name, email, password,phone;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,14 +32,24 @@ public class RegistroActivity extends AppCompatActivity {
 
 
         name = (EditText) findViewById(R.id.nombre);
+        email = (EditText) findViewById(R.id.correo);
+        password = (EditText) findViewById(R.id.contrasena);
+        phone = (EditText) findViewById(R.id.telefono);
+
+
 
     }
 
-    //Metodo para el envio
+    //Metodo para el envio a la confirmacion
     public void Enviar(View view) {
-        Intent i = new Intent(RegistroActivity.this, BoardActivity.class);
+        Intent i = new Intent(RegistroActivity.this, ConfirmationActivity.class);
         i.putExtra("name_data", name.getText().toString());
+        i.putExtra("email_data", email.getText().toString());
+        i.putExtra("password_data", password.getText().toString());
+        i.putExtra("phone_data", phone.getText().toString());
         startActivity(i);
     }
+
+
 
 }
